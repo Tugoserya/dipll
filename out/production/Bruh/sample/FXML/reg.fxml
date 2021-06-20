@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlers.Registration">
+    <children>
+        <AnchorPane layoutY="93.0" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Button fx:id="reg_but" layoutX="288.0" layoutY="327.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="239.0" text="Зарегистрироваться" textOverrun="CLIP">
+                    <font>
+                        <Font name="System Italic" size="20.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+                <Text layoutX="124.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль" wrappingWidth="106.115234375">
+                    <font>
+                        <Font name="Bodoni MT Black Italic" size="27.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="login" layoutX="235.0" layoutY="18.0" prefHeight="31.0" prefWidth="331.0" />
+                <PasswordField fx:id="pass" layoutX="235.0" layoutY="62.0" prefHeight="31.0" prefWidth="331.0" />
+                <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="14.0" layoutY="280.0">
+                    <image>
+                        <Image url="@../../../../../Downloads/pngegg.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="137.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин" wrappingWidth="80.115234375">
+                    <font>
+                        <Font name="Bodoni MT Black Italic" size="27.0" />
+                    </font>
+                </Text>
+            <Text layoutX="163.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя" wrappingWidth="59.115234375">
+               <font>
+                  <Font name="Bodoni MT Black Italic" size="27.0" />
+               </font>
+            </Text>
+            <Text layoutX="106.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия" wrappingWidth="114.115234375">
+               <font>
+                  <Font name="Bodoni MT Black Italic" size="27.0" />
+               </font>
+            </Text>
+            <Text layoutX="107.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отчество" wrappingWidth="122.115234375">
+               <font>
+                  <Font name="Bodoni MT Black Italic" size="27.0" />
+               </font>
+            </Text>
+            <Text layoutX="115.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Паспорт" wrappingWidth="106.115234375">
+               <font>
+                  <Font name="Bodoni MT Black Italic" size="27.0" />
+               </font>
+            </Text>
+            <TextField fx:id="name" layoutX="235.0" layoutY="111.0" prefHeight="31.0" prefWidth="331.0" />
+            <TextField fx:id="last_name" layoutX="235.0" layoutY="157.0" prefHeight="31.0" prefWidth="331.0" />
+            <TextField fx:id="patronymic" layoutX="235.0" layoutY="202.0" prefHeight="31.0" prefWidth="331.0" />
+            <TextField fx:id="passport" layoutX="235.0" layoutY="249.0" prefHeight="31.0" prefWidth="331.0" />
+            <ImageView fx:id="prog_image" fitHeight="106.0" fitWidth="106.0" layoutX="14.0" layoutY="280.0">
+               <image>
+                  <Image url="@../../../resources/pngegg.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <Text layoutX="257.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация">
+            <font>
+                <Font name="Gigi" size="48.0" />
+            </font>
+        </Text>
+          <Button fx:id="exit" layoutX="715.0" layoutY="31.0" mnemonicParsing="false" text="Назад" />
+    </children>
+</AnchorPane>

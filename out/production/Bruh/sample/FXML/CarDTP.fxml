@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlers.CarDTP">
+    <children>
+        <AnchorPane layoutY="93.0" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <TableView fx:id="table" layoutX="145.0" layoutY="1.0" prefHeight="400.0" prefWidth="670.0">
+                    <columns>
+                        <TableColumn fx:id="id_car" maxWidth="39.0" prefWidth="39.0" text="ID" />
+                        <TableColumn fx:id="gos_nomer" maxWidth="146.0" prefWidth="146.0" text="Гос номер" />
+                        <TableColumn fx:id="vin" maxWidth="223.0" prefWidth="223.0" text="VIN" />
+                        <TableColumn fx:id="marca" maxWidth="173.0" minWidth="2.0" prefWidth="173.0" text="Марка" />
+                        <TableColumn fx:id="dtp_col" maxWidth="85.0" prefWidth="85.0" text="Кол-во ДТП" />
+                    </columns>
+                </TableView>
+                <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="14.0" layoutY="280.0">
+                    <image>
+                        <Image url="@../../../../../Downloads/pngegg.png" />
+                    </image>
+                </ImageView>
+            <ImageView fx:id="prog_image" fitHeight="106.0" fitWidth="106.0" layoutX="14.0" layoutY="280.0">
+               <image>
+                  <Image url="@../../../resources/pngegg.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <Text layoutX="274.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автомобили">
+            <font>
+                <Font name="Gigi" size="48.0" />
+            </font>
+        </Text>
+        <Button fx:id="glav" layoutX="33.0" layoutY="47.0" mnemonicParsing="false" text="На главную" />
+        <Button fx:id="back" layoutX="716.0" layoutY="41.0" mnemonicParsing="false" text="Назад" />
+    </children>
+</AnchorPane>
